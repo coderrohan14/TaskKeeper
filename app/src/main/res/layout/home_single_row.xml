@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EA9A66">
+
+        <TextView
+            android:id="@+id/tvNameRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Name : "
+            android:textColor="#FFF176"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAgeRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Age : "
+            android:textColor="#FFF176"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameRec" />
+
+        <TextView
+            android:id="@+id/tvDobRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="D.O.B : "
+            android:textColor="#FFF176"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAgeRec" />
+
+        <TextView
+            android:id="@+id/tvNameRecVal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#183DFF"
+            android:textSize="23sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNameRec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvNameRec"
+            app:layout_constraintTop_toTopOf="@+id/tvNameRec"
+            tools:text="Rohan Pradhan" />
+
+        <TextView
+            android:id="@+id/tvAgeRecVal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="#183DFF"
+            android:textSize="23sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAgeRec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvNameRecVal"
+            app:layout_constraintTop_toTopOf="@+id/tvAgeRec"
+            tools:text="19" />
+
+        <TextView
+            android:id="@+id/tvDobRecVal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#183DFF"
+            android:textSize="23sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDobRec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvAgeRecVal"
+            app:layout_constraintTop_toTopOf="@+id/tvDobRec"
+            tools:text="14/06/2002" />
+
+        <TextView
+            android:id="@+id/uidRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/tvDobRecVal"
+            app:layout_constraintEnd_toStartOf="@+id/tvDobRecVal"
+            app:layout_constraintStart_toEndOf="@+id/tvDobRec"
+            app:layout_constraintTop_toBottomOf="@+id/tvAgeRecVal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
